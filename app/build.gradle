@@ -124,3 +124,6 @@ dependencies {
 
 // Запуск Firebase для работы пуш-уведомлений
 apply plugin: 'com.google.gms.google-services'
+googleServices {
+    disableVersionCheck = true
+}
