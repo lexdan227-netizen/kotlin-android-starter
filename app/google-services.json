@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742053892858",
+    "project_id": "test-native-android-56916",
+    "storage_bucket": "test-native-android-56916.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742053892858:android:6ab3991f2d197776cbaf43",
+        "android_client_info": {
+          "package_name": "io.mvpstarter.sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfiD6kKD2dsDJT1unnQlGBxPQezwnzJNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
