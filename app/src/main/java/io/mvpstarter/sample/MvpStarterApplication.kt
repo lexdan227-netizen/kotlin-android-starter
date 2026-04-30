@@ -11,6 +11,7 @@ import io.mvpstarter.sample.injection.component.DaggerAppComponent
 import io.mvpstarter.sample.injection.module.AppModule
 import io.mvpstarter.sample.injection.module.NetworkModule
 import timber.log.Timber
+import cloud.mindbox.mobile_sdk.Mindbox
 
 class MvpStarterApplication : MultiDexApplication() {
 
@@ -24,6 +25,7 @@ class MvpStarterApplication : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
+        Mindbox.init(this, "B3XN9rTM1FCVz2hAXSyDtxTca50xL9Cj", "https://api.mindbox.ru")
 
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
