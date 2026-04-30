@@ -7,8 +7,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        // ВНИМАНИЕ: Сюда впишите ваш ID из Firebase! Обязательно в кавычках.
-        applicationId "ВАШ_ИДЕНТИФИКАТОР_ИЗ_FIREBASE" 
+        applicationId "test-native-android" 
         
         minSdkVersion 21
         targetSdkVersion 30
@@ -81,6 +80,9 @@ android {
 }
 
 configurations.all {
+    resolutionStrategy {
+        force 'androidx.annotation:annotation-experimental:1.0.0'
+    }
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         def requested = details.requested
         if (requested.group == 'org.jetbrains.kotlin' && requested.name == 'kotlin-reflect') {
