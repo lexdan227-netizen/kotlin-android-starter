@@ -82,6 +82,8 @@ android {
 configurations.all {
     resolutionStrategy {
         force 'androidx.annotation:annotation-experimental:1.0.0'
+        force 'androidx.lifecycle:lifecycle-runtime:2.6.2'
+        force 'androidx.lifecycle:lifecycle-common:2.6.2'
     }
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         def requested = details.requested
@@ -90,7 +92,6 @@ configurations.all {
         }
     }
 }
-
 apply from: 'dependencies.gradle'
 
 dependencies {
