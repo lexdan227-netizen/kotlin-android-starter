@@ -95,7 +95,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     
     // SDK Mindbox
-    implementation("cloud.mindbox:mobile-sdk:3.4.0")
+    implementation("cloud.mindbox:mobile-sdk:+")
     
     implementation supportLibs
     implementation googlePlayLibs
