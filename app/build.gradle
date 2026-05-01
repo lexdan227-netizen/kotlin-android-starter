@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "io.mvpstarter.sample" 
-        
+    }
         minSdkVersion 21
         targetSdkVersion 30
         testInstrumentationRunner "${applicationId}.runner.RxAndroidJUnitRunner"
