@@ -7,10 +7,9 @@ android {
     compileSdkVersion 30
     kotlinOptions {
         freeCompilerArgs += ['-Xskip-metadata-version-check']
-
+    }
     defaultConfig {
         applicationId "io.mvpstarter.sample" 
-    }
         minSdkVersion 21
         targetSdkVersion 30
         testInstrumentationRunner "${applicationId}.runner.RxAndroidJUnitRunner"
