@@ -25,13 +25,7 @@ class MvpStarterApplication : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
-        val configuration = cloud.mindbox.mobile_sdk.MindboxConfiguration.Builder(
-            this,
-            "https://api.mindbox.ru",
-            "B3XN9rTM1FCVz2hAXSyDtxTca50xL9Cj"
-        ).build()
-
-        cloud.mindbox.mobile_sdk.Mindbox.init(this, configuration, emptyList())
+        cloud.mindbox.mobile_sdk.Mindbox.init(this, "B3XN9rTM1FCVz2hAXSyDtxTca50xL9Cj", "https://api.mindbox.ru")
 
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
