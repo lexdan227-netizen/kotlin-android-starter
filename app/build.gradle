@@ -5,7 +5,6 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 30
-    }
 
     defaultConfig {
         applicationId "io.mvpstarter.sample" 
@@ -99,6 +98,7 @@ configurations.all {
         }
     }
 }
+
 apply from: 'dependencies.gradle'
 
 dependencies {
